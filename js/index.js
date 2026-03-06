@@ -94,3 +94,41 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Show the default main tab-group (Professional)
+  const defaultGroup = document.querySelector('#prof');
+  defaultGroup.style.display = 'block';
+
+  // Make its first sub-tab active
+  const firstTab = defaultGroup.querySelector('.tab');
+  if (firstTab) firstTab.classList.add('active');
+
+  // Optional: auto-click the first tab if it triggers more actions
+  if (firstTab) firstTab.click();
+});
+
+// Existing click handler for main buttons
+document.querySelectorAll('.projects-buttons a').forEach(button => {
+  button.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetGroup = document.querySelector(targetId);
+
+    // hide all tab groups
+    document.querySelectorAll('.tab-group').forEach(group => {
+      group.style.display = 'none';
+    });
+
+    // remove active class from all tabs
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+
+    // show selected tab group
+    targetGroup.style.display = 'block';
+
+    // auto click first tab
+    const firstTab = targetGroup.querySelector('.tab');
+    if (firstTab) firstTab.click();
+  });
+});
