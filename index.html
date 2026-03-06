@@ -25,7 +25,7 @@
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">My Skills</a></li>
-                    <li class="nav__item"><a href="#works" class="nav__link">My Works</a></li>
+                    <li class="nav__item"><a href="#works" class="nav__link">My Projects</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 </ul>
             </nav>
@@ -67,7 +67,7 @@
                     <a class="adobe__item"><img src="img/adobe/acrobat.png" alt="" class="adobe__img"></a>
                     <a class="adobe__item"><img src="img/adobe/blox.png" alt="" class="adobe__img"></a>              
                 </div> 
-                <a href="#works" class="btn">My Projects</a>
+                <a href="#works" class="btn">VIEW MY WORKS</a>
             </section>
 <!--- About Me -->
             <section class="about-me" id="about">
@@ -88,27 +88,70 @@
             </section>
 <!--- My Works -->
             <section class="my-works" id="works">
-                <h2 class="section-title section__title--works">My Projects</h2>
-                <p class="section__subtitle section__subtitle--works">Professional / School & Personal</p>
-                
+                <h2 class="section-title section__title--works">Selected Works</h2>
+                <p class="section__subtitle section__subtitle--works">Curated projects from professional work, client commissions, academic studies, and personal projects.</p>
+               
+				<div class="projects-buttons">
+					<a href="#prof" class="btn">Professional Works</a>
+					<a href="#comm" class="btn">Commissioned Works</a>
+					<a href="#schl" class="btn">Academic</a>
+					<a href="#persn" class="btn">Personal Creatives</a>
+				</div>
+				
                 <!--- Works Nav-->
-                    <nav class="nav2">
-                        <a href="#professional" class="btn">Professional Works </a>
-                        <div class="tabs">
-                                <button data-tab-target="#tab1" id="btn1" class="active tab">Professional Work</button>
-                                <button data-tab-target="#tab8" id="btn8" class="tab"> Commissioned Projects </button>
-                                <button data-tab-target="#tab2" id="btn2" class="tab">School Projects</button>
-                                <button data-tab-target="#tab3" id="btn3" class="tab">Personal Designs</button>
-                                <!--<button data-tab-target="#tab4" id="btn4" class="tab">Game Poster</button>
-                                <button data-tab-target="#tab5" id="btn5" class="tab">Game UI and Assets</button>
-                                <button data-tab-target="#tab6" id="btn6" class="tab">Mock-ups</button>
-                                <button data-tab-target="#tab7" id="btn7" class="tab">Logo Designs</button>
-                                <button data-tab-target="#tab9" id="btn9" class="tab">School Works</button> -->
-                        </div>
-                    </nav>        
+        <nav class="nav2">
+				
+				<div id="prof" class="tab-group active">
+				  <div class="tabs">
+					<button data-tab-target="#tab10" class="tab active">Newspaper Layout and Ads</button>
+				  </div>
+				</div>
+				
+
+				<div id="comm" class="tab-group">
+					<div class="tabs">
+						<button data-tab-target="#tab5" class="tab">Brand Identity & Promotional Design</button>
+					</div>
+				</div>
+
+
+				<div id="schl" class="tab-group">
+					<div class="tabs">
+						<button data-tab-target="#tab4" id="btn4" class="tab">Game Design and Assets</button>
+					
+										
+					</div>
+				</div>
+				
+				<div id="persn" class="tab-group">
+					<div class="tabs">
+						<button data-tab-target="#tab1" id="btn1" class="tab">Commercial Campaign Mockup</button>
+						<button data-tab-target="#tab2" id="btn2" class="tab">Conceptual Art</button> 
+						<button data-tab-target="#tab3" id="btn3" class="tab">Digital Fan Art</button>
+						<button data-tab-target="#tab8" id="btn3" class="tab">Promotional Design</button>
+						
+					</div>
+				</div>
+						 
+		 
+                    
+                    </nav>     
+
+
+					
             <div class="portfolio">
-<!--TAB1 Ads Poster-->    
-                <div id="tab1" data-tab-content class="active" class="image-portfolio">
+			
+<!--TAB10 Newspaper Layout-->    
+                <div id="tab10" data-tab-content class="active" class="image-portfolio">
+<!--- Newspaper Layout --->
+                    <img src="img/news/TheGreensheetMock.jpg" alt="" class="portfolio__img">
+                    <img src="img/news/TheFortbendMock.jpg" alt="" class="portfolio__img">
+                    <img src="img/news/TheLeaderMock.jpg" alt="" class="portfolio__img">  				
+                </div>
+				
+				
+<!--TAB1 Campaign Ads-->    
+                <div id="tab1" data-tab-content class="image-portfolio">
 <!--- Portfolio Ads --->
                     <img src="img/poster/brand/Stepn Shoes.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/brand/Apex Mobile.jpg" alt="" class="portfolio__img">
@@ -116,42 +159,62 @@
                     <img src="img/poster/brand/Sarc's Burger.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/brand/Serpent Beer.jpg" alt="" class="portfolio__img">      
                 </div>
-<!--TAB2 Random Posters--> 
+				
+				
+<!--TAB2 Conceptual Art--> 
                 <div id="tab2" data-tab-content class="image-portfolio">
-<!--- Portfolio Random Posters --->
-                    <img src="img/poster/anime/Asta Poster.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/anime/Yuno Poster.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/nba/Curry Poster.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/nba/Durant Poster.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/nba/Kobe Poster.jpg" alt="" class="portfolio__img">
+<!--- Portfolio Conceptual Art --->         
                     <img src="img/poster/random/Encanto.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/random/Husky.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/random/Mufasa.jpg" alt="" class="portfolio__img">
                 </div>
-<!--TAB3 Random Designs-->
+				
+				
+<!--TAB3 Fan Art-->
                 <div id="tab3" data-tab-content class="image-portfolio">
-<!--- Portfolio Designs --->
-                    <img src="img/poster/kpop/Dahyun Punk.jpg" alt="" class="portfolio__img">
+<!--- Fan Art --->                    
+					<img src="img/poster/anime/Asta Poster.jpg" alt="" class="portfolio__img">
+                    <img src="img/poster/anime/Yuno Poster.jpg" alt="" class="portfolio__img">
+                    <img src="img/poster/nba/Curry Poster.jpg" alt="" class="portfolio__img">
+                    <img src="img/poster/nba/Durant Poster.jpg" alt="" class="portfolio__img">
+                    <img src="img/poster/nba/Kobe Poster.jpg" alt="" class="portfolio__img">
+					<img src="img/poster/kpop/Dahyun Punk.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/kpop/Nayeon Pop.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/kpop/gspot.jpg" alt="" class="portfolio__img">
+                   <!-- <img src="img/poster/kpop/gspot.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/kpop/grind.jpg" alt="" class="portfolio__img">
                     <img src="img/poster/kpop/beself.jpg" alt="" class="portfolio__img">
-                    <img src="img/poster/kpop/toxic.jpg" alt="" class="portfolio__img">
+                    <img src="img/poster/kpop/toxic.jpg" alt="" class="portfolio__img"> -->
                 </div>
+				
+				
 <!--TAB4 Game-->
                 <div id="tab4" data-tab-content class="image-portfolio">
 <!--- Portfolio Game --->
                         <img src="img/game/Bird Game Pose.jpg" alt="" class="portfolio__img">
                         <img src="img/game/Rodents Game Pose.jpg" alt="" class="portfolio__img">
+						<img src="img/game/mainmenu.jpg" alt="" class="portfolio__img">
+						<img src="img/game/gameselection.jpg" alt="" class="portfolio__img">
+						<img src="img/game/birdgame.jpg" alt="" class="portfolio__img">
+						<img src="img/game/rodentgame.jpg" alt="" class="portfolio__img">
                 </div>
-<!--TAB5 UI/ASSETS-->
-                <div id="tab5" data-tab-content class="image-portfolio">
-<!--- Portfolio UI/ASSETS--->
-                    <img src="img/game/mainmenu.jpg" alt="" class="portfolio__img">
-                    <img src="img/game/gameselection.jpg" alt="" class="portfolio__img">
-                    <img src="img/game/birdgame.jpg" alt="" class="portfolio__img">
-                    <img src="img/game/rodentgame.jpg" alt="" class="portfolio__img">
+				
+				
+<!--TAB5 -->
+                <div id="tab5" data-tab-content class="image-portfolio">  
+					<img src="img/Brochure/NKD Brochure.jpg" alt="" class="portfolio__img">	
+					<img src="img/Others/RULES&REGULATION.jpg" alt="" class="portfolio__img">
+					 <img src="img/logo/nkd logo.jpg" alt="" class="portfolio__img">
+					 <video  width="854" loop autoplay preload="metadata" muted>
+                            <source src="vid/sample.mp4" type=video/mp4 controls id="videos">
+                        </video>
+                        <video  width="854" loop autoplay preload="metadata" muted>
+                            <source src="vid/Triple M New_2.mp4" type=video/mp4 controls id="videos">
+                        </video>
+                       
+                        <img src="img/logo/triple m.jpg" alt="" class="portfolio__img">
                 </div>
+				
+				
 <!--TAB6 mock-ups--> 
                 <div id="tab6" data-tab-content class="image-portfolio">
 <!--- Portfolio mocks--->
@@ -159,38 +222,36 @@
                     <img src="img/mockups/Asta Tshirt.jpg" alt="" class="portfolio__img">
                     <img src="img/mockups/Yuno Tshirt.jpg" alt="" class="portfolio__img">
                 </div>
+				
 <!---Popup--->
                 <div class="popup-image">
                     <span>&times;</span>
                     <img src="img/game/Bird Game Pose.jpg" alt="">
                 </div>
+				
+				
 <!--TAB7 Logo Designs--> 
                 <div id="tab7" data-tab-content class="image-portfolio">
 <!--- Portfolio Logo --->
-                        <video  width="854" loop autoplay preload="metadata" muted>
-                            <source src="vid/sample.mp4" type=video/mp4 controls id="videos">
-                        </video>
-                        <video  width="854" loop autoplay preload="metadata" muted>
-                            <source src="vid/Triple M New_2.mp4" type=video/mp4 controls id="videos">
-                        </video>
-                        <img src="img/logo/nkd logo.jpg" alt="" class="portfolio__img">
-                        <img src="img/logo/triple m.jpg" alt="" class="portfolio__img">
+                        
                         <img src="img/logo/cocks.jpg" alt="" class="portfolio__img">
                 </div>
+				
+				
 <!--TAB8 Brochures--> 
                 <div id="tab8" data-tab-content class="image-portfolio">
-<!--- Portfolio Brochure --->
-                        <img src="img/Brochure/NKD Brochure.jpg" alt="" class="portfolio__img">
+<!--- Portfolio Promotional Design --->                 
                         <img src="img/Brochure/Sample Brochure Ph.jpg" alt="" class="portfolio__img">
                         <img src="img/Brochure/Sample ML Brochure.jpg" alt="" class="portfolio__img">
                 </div>    
+				
+				
 <!--TAB9 School Works--> 
                 <div id="tab9" data-tab-content class="image-portfolio">
 <!--- Portfolio Others --->
                         <video  width="854" height="150" controls>
                             <source src="vid/ADIDAKS.mp4" type=video/mp4 controls id="videos">
                         </video>
-                        <img src="img/Others/RULES&REGULATION.jpg" alt="" class="portfolio__img">
                         <img src="img/Others/coa.jpg" alt="" class="portfolio__img">
                         <img src="img/Others/cop.jpg" alt="" class="portfolio__img">         
                         <img src="img/Others/Story Board Vic's Corner.jpg" alt="" class="portfolio__img">
@@ -225,20 +286,6 @@
                 </ul>
             </footer>
         <script src="js/index.js"></script>
+		
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
