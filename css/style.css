@@ -435,14 +435,12 @@ header {
     padding: .5em
 }
 /*tab projects*/
-.nav2 {
-    display: grid;
-    grid-template-columns:  auto 1fr;
-    border-bottom: 3px solid var(--clr-main);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    justify-content: center;    
+.nav2{
+    display:flex;
+    justify-content:center;
+    border-bottom:3px solid var(--clr-main);
+    margin-top:30px;
+    margin-bottom:30px; 
 }
 .nav2 button {
     text-decoration: none;
@@ -568,3 +566,114 @@ header {
     margin-top: 1em;
     font-size: var(--fs-h3);
   }
+
+.projects-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.projects-buttons .btn {
+	 margin-top:10px;
+  /* This ensures all buttons match the size of the longest one */
+  flex: 1 1 200px; /* Grow, shrink, base-width of 200px */
+  max-width: 260px; /* Keep your original max-width cap */
+  
+  /* Vertical/Horizontal centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* Styling */
+  background: #ff6b5c;
+  color: white;
+  padding: 20px 15px; /* Vertical padding creates the 'height' */
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* ===== SECOND TABS ===== */
+
+.tabs{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  border-bottom:2px solid #ff6b5c;
+  padding-bottom:10px;
+  margin-top:20px;
+}
+
+.tab{
+  background:none;
+  border:none;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  padding:10px 20px;
+  transition:0.2s;
+}
+
+.tab:hover{
+  color:#ff6b5c;
+}
+
+.tab.active{
+  border:1px solid #ff6b5c;
+  color:#ff6b5c;
+}
+
+/* ===== TAB GROUP SYSTEM ===== */
+
+.tab-group {
+  display: none; /* Everything hidden by default */
+}
+
+.tab-group.active {
+  display: block; /* Only show active */
+}
+
+
+
+/* Popup overlay */
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.95);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden; /* prevents scrolling */
+}
+
+/* Image inside popup */
+.popup-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* keeps aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Close button */
+.popup-image span {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    user-select: none;
+}
